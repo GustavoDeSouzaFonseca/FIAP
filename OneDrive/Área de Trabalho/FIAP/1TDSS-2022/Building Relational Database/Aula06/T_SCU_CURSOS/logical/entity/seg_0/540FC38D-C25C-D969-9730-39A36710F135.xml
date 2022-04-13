@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="540FC38D-C25C-D969-9730-39A36710F135" name="T_SCU_CURSOS">
+<createdBy>GustaFont</createdBy>
+<createdTime>2022-04-13 05:14:25 UTC</createdTime>
+<ownerDesignName>T_SCU_CURSOS</ownerDesignName>
+<engineerTo>
+<item key="C0882306-4547-AE9C-642C-8F587002173D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_CURSO" id="B1FEBF1D-37F1-96B8-D0F5-46603A75C8BF">
+<createdBy>GustaFont</createdBy>
+<createdTime>2022-04-13 05:15:10 UTC</createdTime>
+<comment><![CDATA[Este atributo serve como chave primária e informação de identificação do curso.]]></comment>
+<commentInRDBMS><![CDATA[Este atributo serve como chave primária e informação de identificação do curso.]]></commentInRDBMS>
+<ownerDesignName>T_SCU_CURSOS</ownerDesignName>
+<engineerTo>
+<item key="C0882306-4547-AE9C-642C-8F587002173D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_CURSO" id="FF8A7862-79D9-1ED7-49EA-4623069EBDF8">
+<createdBy>GustaFont</createdBy>
+<createdTime>2022-04-13 05:16:23 UTC</createdTime>
+<comment><![CDATA[Este atributo serve para nomear o curso.]]></comment>
+<commentInRDBMS><![CDATA[Este atributo serve para nomear o curso.]]></commentInRDBMS>
+<ownerDesignName>T_SCU_CURSOS</ownerDesignName>
+<engineerTo>
+<item key="C0882306-4547-AE9C-642C-8F587002173D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SG_CURSO" id="4EF75D2D-BB42-3D9B-DDC9-DFC746A4AC9E">
+<createdBy>GustaFont</createdBy>
+<createdTime>2022-04-13 05:17:35 UTC</createdTime>
+<comment><![CDATA[Este atributo serve para simplificar utilizando siglas do nome do curso.]]></comment>
+<commentInRDBMS><![CDATA[Este atributo serve para simplificar utilizando siglas do nome do curso.]]></commentInRDBMS>
+<ownerDesignName>T_SCU_CURSOS</ownerDesignName>
+<engineerTo>
+<item key="C0882306-4547-AE9C-642C-8F587002173D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_VAGAS" id="97AFF7F4-64B8-0CDC-67CC-F1C31BF763DC">
+<createdBy>GustaFont</createdBy>
+<createdTime>2022-04-13 05:18:47 UTC</createdTime>
+<comment><![CDATA[Este atributo serve para numerar a quantidade de vagas disponíveis de um curso.]]></comment>
+<commentInRDBMS><![CDATA[Este atributo serve para numerar a quantidade de vagas disponíveis de um curso.]]></commentInRDBMS>
+<ownerDesignName>T_SCU_CURSOS</ownerDesignName>
+<engineerTo>
+<item key="C0882306-4547-AE9C-642C-8F587002173D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="176A723D-8A72-B9F7-E8AB-C5EAA665458B" name="T_SCU_CURSOS PK">
+<createdBy>GustaFont</createdBy>
+<createdTime>2022-04-13 05:15:32 UTC</createdTime>
+<ownerDesignName>T_SCU_CURSOS</ownerDesignName>
+<engineerTo>
+<item key="C0882306-4547-AE9C-642C-8F587002173D" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B1FEBF1D-37F1-96B8-D0F5-46603A75C8BF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

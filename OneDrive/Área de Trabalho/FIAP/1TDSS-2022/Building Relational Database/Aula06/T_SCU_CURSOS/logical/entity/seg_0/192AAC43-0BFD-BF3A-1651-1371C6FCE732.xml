@@ -1,0 +1,125 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="192AAC43-0BFD-BF3A-1651-1371C6FCE732" name="T_SCU_BIBLIOGRAFIA">
+<createdBy>GustaFont</createdBy>
+<createdTime>2022-04-13 05:30:56 UTC</createdTime>
+<ownerDesignName>T_SCU_CURSOS</ownerDesignName>
+<engineerTo>
+<item key="C0882306-4547-AE9C-642C-8F587002173D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_BIBLIOGRAFIA" id="1EFFBA70-5D67-3C4F-ECBE-4B8E4BEBFC48">
+<createdBy>GustaFont</createdBy>
+<createdTime>2022-04-13 05:31:29 UTC</createdTime>
+<comment><![CDATA[Este atributo serve para identificar cada bibliografia como única.]]></comment>
+<commentInRDBMS><![CDATA[Este atributo serve para identificar cada bibliografia como única.]]></commentInRDBMS>
+<ownerDesignName>T_SCU_CURSOS</ownerDesignName>
+<engineerTo>
+<item key="C0882306-4547-AE9C-642C-8F587002173D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_ISBN" id="1CFB35BB-FF03-D7E9-FF5B-B9BBE45B1265">
+<createdBy>GustaFont</createdBy>
+<createdTime>2022-04-13 05:32:24 UTC</createdTime>
+<comment><![CDATA[Este atributo serve para saber o número do Padrão Internacional de Numeração de Livro.]]></comment>
+<commentInRDBMS><![CDATA[Este atributo serve para saber o número do Padrão Internacional de Numeração de Livro.]]></commentInRDBMS>
+<ownerDesignName>T_SCU_CURSOS</ownerDesignName>
+<engineerTo>
+<item key="C0882306-4547-AE9C-642C-8F587002173D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<ownDataTypeParameters>13,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_EDICAO" id="5B041F3D-5FC1-77B4-9E59-71EF11841D31">
+<createdBy>GustaFont</createdBy>
+<createdTime>2022-04-13 05:34:23 UTC</createdTime>
+<comment><![CDATA[Este atributo serve para saber o número da edição de cada livro.]]></comment>
+<commentInRDBMS><![CDATA[Este atributo serve para saber o número da edição de cada livro.]]></commentInRDBMS>
+<ownerDesignName>T_SCU_CURSOS</ownerDesignName>
+<engineerTo>
+<item key="C0882306-4547-AE9C-642C-8F587002173D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_LIVRO" id="D47065C6-02BC-7C69-5179-3AA5CA6A2EE4">
+<createdBy>GustaFont</createdBy>
+<createdTime>2022-04-13 05:35:26 UTC</createdTime>
+<comment><![CDATA[Este atributo serve para nomear cada livro.]]></comment>
+<commentInRDBMS><![CDATA[Este atributo serve para nomear cada livro.]]></commentInRDBMS>
+<ownerDesignName>T_SCU_CURSOS</ownerDesignName>
+<engineerTo>
+<item key="C0882306-4547-AE9C-642C-8F587002173D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_PUBLICACAO" id="C756FCE5-4573-38F9-6A4B-F5B1E39E93FD">
+<createdBy>GustaFont</createdBy>
+<createdTime>2022-04-13 05:36:29 UTC</createdTime>
+<comment><![CDATA[Este atributo serve para definir a data da publicação.]]></comment>
+<commentInRDBMS><![CDATA[Este atributo serve para definir a data da publicação.]]></commentInRDBMS>
+<ownerDesignName>T_SCU_CURSOS</ownerDesignName>
+<engineerTo>
+<item key="C0882306-4547-AE9C-642C-8F587002173D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_CURSO" id="C02C9086-601A-3061-15D7-F3E8CB716F75">
+<createdBy>GustaFont</createdBy>
+<createdTime>2022-04-13 05:40:40 UTC</createdTime>
+<comment><![CDATA[Este atributo serve como chave primária e informação de identificação do curso.]]></comment>
+<generatorID>D2D10524-1AB7-C88E-53C5-0201524EEC79</generatorID>
+<ownerDesignName>T_SCU_CURSOS</ownerDesignName>
+<engineerTo>
+<item key="C0882306-4547-AE9C-642C-8F587002173D" value="true"/>
+</engineerTo>
+<referedAttribute>B1FEBF1D-37F1-96B8-D0F5-46603A75C8BF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="618F4C28-8950-DAFE-0E88-7D23010F0D5B" name="T_SCU_BIBLIOGRAFIA PK">
+<createdBy>GustaFont</createdBy>
+<createdTime>2022-04-13 05:31:51 UTC</createdTime>
+<ownerDesignName>T_SCU_CURSOS</ownerDesignName>
+<engineerTo>
+<item key="C0882306-4547-AE9C-642C-8F587002173D" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1EFFBA70-5D67-3C4F-ECBE-4B8E4BEBFC48</attributeRef>
+<attributeRef>C02C9086-601A-3061-15D7-F3E8CB716F75</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

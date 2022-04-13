@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BusinessInfoDesign class="oracle.dbtools.crest.model.businessinfo.BusinessInfoDesign" name="Business Information" id="0765EB31-B908-1065-A771-A5806DD7B0F9">
+<createdBy>GustaFont</createdBy>
+<createdTime>2022-04-13 05:14:04 UTC</createdTime>
+<ownerDesignName>T_SCU_CURSOS</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</BusinessInfoDesign>

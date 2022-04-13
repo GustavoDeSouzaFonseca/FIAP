@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="ED6594D9-8C64-3F6E-6AD7-A1BB52B856FD" mainViewID="9FEE1907-841E-D69E-4B1A-20F80650DF85">
+<createdBy>GustaFont</createdBy>
+<createdTime>2022-04-13 05:14:04 UTC</createdTime>
+<ownerDesignName>T_SCU_CURSOS</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

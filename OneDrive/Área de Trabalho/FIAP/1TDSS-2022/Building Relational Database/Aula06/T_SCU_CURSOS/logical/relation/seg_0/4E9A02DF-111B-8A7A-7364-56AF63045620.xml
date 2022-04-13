@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_SCU_DICIPLINA" directorySegmentName="seg_0" id="4E9A02DF-111B-8A7A-7364-56AF63045620">
+<createdBy>GustaFont</createdBy>
+<createdTime>2022-04-13 05:28:06 UTC</createdTime>
+<ownerDesignName>T_SCU_CURSOS</ownerDesignName>
+<engineerTo>
+<item key="C0882306-4547-AE9C-642C-8F587002173D" value="true"/>
+</engineerTo>
+<sourcePk>176A723D-8A72-B9F7-E8AB-C5EAA665458B</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>540FC38D-C25C-D969-9730-39A36710F135</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>B2E49104-008F-7910-FFCF-8496DEAB5350</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

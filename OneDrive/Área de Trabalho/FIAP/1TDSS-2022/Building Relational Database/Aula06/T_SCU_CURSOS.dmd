@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="T_SCU_CURSOS" id="AC8E1356-E2BE-6D68-F6C4-2450AB8A2FC7" version="3.5">
+<createdBy>GustaFont</createdBy>
+<createdTime>2022-04-13 05:14:04 UTC</createdTime>
+<ownerDesignName>T_SCU_CURSOS</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>AC8E1356-E2BE-6D68-F6C4-2450AB8A2FC7</designId>
+</OSDM_Design>
