@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_17" directorySegmentName="seg_0" id="332C78D5-6384-ADEA-E75F-BF92EB75AADE">
+<createdBy>GustaFont</createdBy>
+<createdTime>2022-04-27 10:20:03 UTC</createdTime>
+<ownerDesignName>T_RHSTU_GUSTAVO_FONSECA</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<sourcePk>6E644410-7AD5-C7FC-2576-8D927C238CC0</sourcePk>
+<targetPk>B3C6868B-34FC-CA5A-A219-A1D170B4E596</targetPk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>506DDC9A-FC9E-D13D-7FAD-ED571E3AEA46</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>AC3C3323-617B-64C8-952E-1A41B88D7066</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

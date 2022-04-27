@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="22ABCBCC-669D-6E4F-788E-9DCC76144F2F" name="T_RHSTU_PRESCRIÇÃO">
+<createdBy>GustaFont</createdBy>
+<createdTime>2022-04-27 10:32:11 UTC</createdTime>
+<ownerDesignName>T_RHSTU_GUSTAVO_FONSECA</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="DS_VIA" id="4C24F92E-8551-BC26-7E4C-D8010F3FEF0B">
+<createdBy>GustaFont</createdBy>
+<createdTime>2022-04-27 10:33:03 UTC</createdTime>
+<comment><![CDATA[Este atributo serve para informar qual a descrição da via, seja ela nasal, oral, etc. ]]></comment>
+<commentInRDBMS><![CDATA[Este atributo serve para informar qual a descrição da via, seja ela nasal, oral, etc. ]]></commentInRDBMS>
+<ownerDesignName>T_RHSTU_GUSTAVO_FONSECA</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="QNT_POSOLOGIA" id="8D73297F-B8D0-5F17-69FD-BC63F03C213D">
+<createdBy>GustaFont</createdBy>
+<createdTime>2022-04-27 10:36:17 UTC</createdTime>
+<comment><![CDATA[Este atributo serve para indicar a quantidade de posologia do medicamento.]]></comment>
+<commentInRDBMS><![CDATA[Este atributo serve para indicar a quantidade de posologia do medicamento.]]></commentInRDBMS>
+<ownerDesignName>T_RHSTU_GUSTAVO_FONSECA</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_ORIENTACAO_USO" id="B80657B9-D756-E7FF-4E8E-5924000138D3">
+<createdBy>GustaFont</createdBy>
+<createdTime>2022-04-27 10:39:35 UTC</createdTime>
+<comment><![CDATA[Este atributo serve para descrever e orientar o modo de uso do medicamento.]]></comment>
+<commentInRDBMS><![CDATA[Este atributo serve para descrever e orientar o modo de uso do medicamento.]]></commentInRDBMS>
+<ownerDesignName>T_RHSTU_GUSTAVO_FONSECA</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80</dataTypeSize>
+<ownDataTypeParameters>80,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CD_MEDICAMENTO" id="3CF6BEFE-FD69-2F91-F7A4-EBC455EE386A">
+<createdBy>GustaFont</createdBy>
+<createdTime>2022-04-27 10:44:08 UTC</createdTime>
+<comment><![CDATA[Este atributo serve para indicar o código do medicamento como único.]]></comment>
+<generatorID>0FF057B2-B3F7-9B7D-7D7D-3110B9ABC5B2</generatorID>
+<ownerDesignName>T_RHSTU_GUSTAVO_FONSECA</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<referedAttribute>3BB641A4-2190-BF12-54BE-98C3482CA5E2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CD_CONSULTA" id="E5522076-90EB-7A81-38B5-4838F0C198B8">
+<createdBy>GustaFont</createdBy>
+<createdTime>2022-04-27 10:44:46 UTC</createdTime>
+<comment><![CDATA[Este atributo serve para indicar o número do código da consulta.]]></comment>
+<generatorID>A5AD4A5B-80A9-71BA-D1C9-6A8C8E24BAE0</generatorID>
+<ownerDesignName>T_RHSTU_GUSTAVO_FONSECA</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<referedAttribute>BBD0F1C9-639F-2322-264C-89F7D87EEBD7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="509D1B5F-4BE4-5B4D-E281-FA18A3F3A1CD" name="T_RHSTU_PRESCRIÇÃO PK">
+<createdBy>GustaFont</createdBy>
+<createdTime>2022-04-27 10:44:08 UTC</createdTime>
+<ownerDesignName>T_RHSTU_GUSTAVO_FONSECA</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3CF6BEFE-FD69-2F91-F7A4-EBC455EE386A</attributeRef>
+<attributeRef>E5522076-90EB-7A81-38B5-4838F0C198B8</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
