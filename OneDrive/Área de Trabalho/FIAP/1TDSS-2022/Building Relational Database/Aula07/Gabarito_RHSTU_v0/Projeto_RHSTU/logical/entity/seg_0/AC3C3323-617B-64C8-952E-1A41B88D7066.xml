@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AC3C3323-617B-64C8-952E-1A41B88D7066" name="T_RHSTU_CONSULTA">
+<createdBy>GustaFont</createdBy>
+<createdTime>2022-04-27 01:48:05 UTC</createdTime>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CD_CONSULTA" id="BBD0F1C9-639F-2322-264C-89F7D87EEBD7">
+<createdBy>GustaFont</createdBy>
+<createdTime>2022-04-27 01:49:45 UTC</createdTime>
+<comment><![CDATA[Este atributo serve para indicar o número do código da consulta.]]></comment>
+<commentInRDBMS><![CDATA[Este atributo serve para indicar o número do código da consulta.]]></commentInRDBMS>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_HR_CONSULTA" id="C1A99E93-3126-BCFA-DF17-C7D3B2E84A82">
+<createdBy>GustaFont</createdBy>
+<createdTime>2022-04-27 01:50:53 UTC</createdTime>
+<comment><![CDATA[Este atributo serve para indicar qual a hora e a data da consulta.]]></comment>
+<commentInRDBMS><![CDATA[Este atributo serve para indicar qual a hora e a data da consulta.]]></commentInRDBMS>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_CONSULTORIO" id="0C45A23B-7925-BFCE-F555-A1684D9CFB33">
+<createdBy>GustaFont</createdBy>
+<createdTime>2022-04-27 01:51:50 UTC</createdTime>
+<comment><![CDATA[Este atributo informa qual o número da sala do consulório.]]></comment>
+<commentInRDBMS><![CDATA[Este atributo informa qual o número da sala do consulório.]]></commentInRDBMS>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_MEDICO" id="C841DD24-841F-D7CD-4255-23987A5A0E7C">
+<createdBy>GustaFont</createdBy>
+<createdTime>2022-04-27 01:55:25 UTC</createdTime>
+<comment><![CDATA[Este atributo serve para identificar cada médico com um número único.]]></comment>
+<generatorID>B0E5A3E8-E08E-95D9-07C2-A0E88412B208</generatorID>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<referedAttribute>482889E6-242D-DF79-3274-E6D048DBA622</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_PACIENTE" id="629E589E-445F-311C-DCDF-8BA7C40E5E44">
+<createdBy>GustaFont</createdBy>
+<createdTime>2022-04-27 10:22:12 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber a chave primária do paciente. Esse número é sequencial e gerado automaticamente pelo sistema. Seu conteúdo é obrigatório.]]></comment>
+<generatorID>332C78D5-6384-ADEA-E75F-BF92EB75AADE</generatorID>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<referedAttribute>15A097FF-A07C-398B-0F86-D42FFB66F5C7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B3C6868B-34FC-CA5A-A219-A1D170B4E596" name="T_RHSTU_CONSULTA PK">
+<createdBy>GustaFont</createdBy>
+<createdTime>2022-04-27 01:50:09 UTC</createdTime>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BBD0F1C9-639F-2322-264C-89F7D87EEBD7</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
