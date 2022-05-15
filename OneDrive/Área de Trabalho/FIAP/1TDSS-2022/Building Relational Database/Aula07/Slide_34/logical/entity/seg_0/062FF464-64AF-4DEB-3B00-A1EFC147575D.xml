@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="062FF464-64AF-4DEB-3B00-A1EFC147575D" name="T_EBF_ENGENHEIRO">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2020-05-09 10:55:42 UTC</createdTime>
+<ownerDesignName>Slide_34</ownerDesignName>
+<engineerTo>
+<item key="4B67D55C-A884-69D2-2DC9-FA00BE1C6EFA" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_engenheiro" id="3356A422-4772-FBD5-1362-4A57C3B8EE0D">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2020-05-09 10:56:22 UTC</createdTime>
+<ownerDesignName>Slide_34</ownerDesignName>
+<engineerTo>
+<item key="4B67D55C-A884-69D2-2DC9-FA00BE1C6EFA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_engenheiro" id="7357E003-C7EA-6220-9084-1BF1427775D8">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2020-05-09 10:56:39 UTC</createdTime>
+<ownerDesignName>Slide_34</ownerDesignName>
+<engineerTo>
+<item key="4B67D55C-A884-69D2-2DC9-FA00BE1C6EFA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E47580AC-DA23-0823-1A30-1626AE743D23" name="T_EBF_ENGENHEIRO PK">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2020-05-09 10:56:38 UTC</createdTime>
+<ownerDesignName>Slide_34</ownerDesignName>
+<engineerTo>
+<item key="4B67D55C-A884-69D2-2DC9-FA00BE1C6EFA" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>3356A422-4772-FBD5-1362-4A57C3B8EE0D</newElementsIDs>
+<usedAttributes>
+<attributeRef>3356A422-4772-FBD5-1362-4A57C3B8EE0D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

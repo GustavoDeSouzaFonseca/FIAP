@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BusinessInfoDesign class="oracle.dbtools.crest.model.businessinfo.BusinessInfoDesign" name="Business Information" id="202BAC5B-FB1B-1B88-2EAE-04B072E05396">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2020-05-09 01:58:00 UTC</createdTime>
+<ownerDesignName>Slide_13</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</BusinessInfoDesign>

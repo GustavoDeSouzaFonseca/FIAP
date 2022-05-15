@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Slide_34" id="8199AD11-B086-0885-7C24-AE02B233B8C9" version="3.5">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2020-05-09 01:58:00 UTC</createdTime>
+<ownerDesignName>Slide_13</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>8199AD11-B086-0885-7C24-AE02B233B8C9</designId>
+</OSDM_Design>

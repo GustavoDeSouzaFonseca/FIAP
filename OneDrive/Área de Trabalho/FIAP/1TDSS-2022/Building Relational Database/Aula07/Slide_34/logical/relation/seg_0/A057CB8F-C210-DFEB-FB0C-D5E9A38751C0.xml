@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_5" directorySegmentName="seg_0" id="A057CB8F-C210-DFEB-FB0C-D5E9A38751C0">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2020-05-09 11:12:53 UTC</createdTime>
+<ownerDesignName>Slide_34</ownerDesignName>
+<engineerTo>
+<item key="4B67D55C-A884-69D2-2DC9-FA00BE1C6EFA" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>062FF464-64AF-4DEB-3B00-A1EFC147575D</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>4442EE15-19CE-4767-B5E9-AFA319522860</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

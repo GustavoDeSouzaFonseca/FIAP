@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4442EE15-19CE-4767-B5E9-AFA319522860" name="T_EBF_PROJETO">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2020-05-09 10:57:52 UTC</createdTime>
+<ownerDesignName>Slide_34</ownerDesignName>
+<engineerTo>
+<item key="4B67D55C-A884-69D2-2DC9-FA00BE1C6EFA" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="nr_projeto" id="8A78C9C4-24C6-8048-F107-1FDDACAE9CDF">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2020-05-09 10:57:52 UTC</createdTime>
+<ownerDesignName>Slide_34</ownerDesignName>
+<engineerTo>
+<item key="4B67D55C-A884-69D2-2DC9-FA00BE1C6EFA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_projeto" id="2ED8C0F2-8989-5DA8-2BFA-FA1E73D6F96E">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2020-05-09 10:57:52 UTC</createdTime>
+<ownerDesignName>Slide_34</ownerDesignName>
+<engineerTo>
+<item key="4B67D55C-A884-69D2-2DC9-FA00BE1C6EFA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_detalhada" id="4853031A-13CF-43FA-A008-3A4BDE8025FF">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2020-05-09 10:57:52 UTC</createdTime>
+<ownerDesignName>Slide_34</ownerDesignName>
+<engineerTo>
+<item key="4B67D55C-A884-69D2-2DC9-FA00BE1C6EFA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BDCE0187-E6B0-3933-194E-210B4199881B" name="T_EBF_PROJETO PK">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2020-05-09 10:57:52 UTC</createdTime>
+<ownerDesignName>Slide_34</ownerDesignName>
+<engineerTo>
+<item key="4B67D55C-A884-69D2-2DC9-FA00BE1C6EFA" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>8A78C9C4-24C6-8048-F107-1FDDACAE9CDF</newElementsIDs>
+<usedAttributes>
+<attributeRef>8A78C9C4-24C6-8048-F107-1FDDACAE9CDF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
