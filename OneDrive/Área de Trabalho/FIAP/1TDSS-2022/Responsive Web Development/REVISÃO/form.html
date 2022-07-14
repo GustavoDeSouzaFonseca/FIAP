@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    
+    <title>REVISÃO</title>
+</head>
+<body>
+    
+    <div class="container">
+
+        <header class="cabecalho">
+            <h1 class="titulo">REVISÃO</h1>
+            <!-- nav>a*3[href="#"]{Exemplo-1} -->
+            <nav class="menu">
+                <a href="#" class="active">Exemplo-1</a>
+                <a href="#">Exemplo-2</a>
+                <a href="#">Exemplo-3</a>
+            </nav>
+
+            <form class="cadastro" action="form.html" method="get">
+                <fieldset>
+                    <legend>NEWSLETTER</legend>
+                    <div>
+                        <input type="check" name="nmUser" id="nmUserId" placeholder="Nome" required  oninvalid="this.setCustomValidity('Ei amigão, preencha o campo ai namoral...')">
+                    </div>
+                    <div>
+                        <input type="email" name="emailUser" id="emailUserId" placeholder="Email" oninvalid="this.setCustomValidity('Coloca um email valido krai')">
+                    </div>
+                    <div>
+                        <input type="button" id="btnEnviar" value="ENVIAR">
+                    </div>
+                </fieldset>
+            </form>
+            
+        </header>
+
+
+
+    </div>
+
+</body>
+</html>

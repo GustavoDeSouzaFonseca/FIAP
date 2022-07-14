@@ -1,0 +1,32 @@
+
+.cabecalho{
+    display: flex;
+    background-color: #090505;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{
+    display: flex;
+    column-gap: normal;
+    gap: 2em;
+}
+
+.menu > a{
+    text-decoration: none;
+    font-size: 1.688rem;
+    color: #fff;
+    padding: 2.5rem 0;
+}
+
+.menu > a:hover{
+    background-color: brown;
+}
+
+
+.active{
+    background-color: dodgerblue;
+}
+
+
+

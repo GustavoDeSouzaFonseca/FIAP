@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\GustaFont\OneDrive\Área de Trabalho\JAVA_GL\.metadata\.plugins\org.eclipse.jdt.core
+2292246129.index
+2716357007.index
+1865797976.index

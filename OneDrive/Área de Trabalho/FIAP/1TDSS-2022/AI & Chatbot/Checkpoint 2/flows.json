@@ -1,0 +1,40 @@
+[
+    {
+        "id": "d6ed1cee.29c62",
+        "type": "telegram sender",
+        "z": "c22756804d5a79ca",
+        "name": "",
+        "bot": "704befd7174587ec",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 1250,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "704befd7174587ec",
+        "type": "telegram bot",
+        "botname": "@Bombeir_1TDSS_Bot",
+        "usernames": "",
+        "chatids": "",
+        "baseapiurl": "",
+        "updatemode": "polling",
+        "pollinterval": "300",
+        "usesocks": false,
+        "sockshost": "",
+        "socksport": "6667",
+        "socksusername": "anonymous",
+        "sockspassword": "",
+        "bothost": "",
+        "botpath": "",
+        "localbotport": "8443",
+        "publicbotport": "8443",
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": false
+    }
+]

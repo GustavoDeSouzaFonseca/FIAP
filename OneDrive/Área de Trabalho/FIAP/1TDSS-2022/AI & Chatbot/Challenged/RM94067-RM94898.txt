@@ -1,0 +1,27 @@
+Gustavo de Souza Fonseca - RM94067
+Luan Santos dos Reis - 	rm94898
+
+WATSON ASSISTANT
+API Key:
+ttdeAvitUy0aWJvBdzSsHlDJq_7oRK6mbBT6FTFlBeud
+
+Service Endpoint:
+https://api.us-south.assistant.watson.cloud.ibm.com/instances/af2783c3-dbe0-48f1-8880-9c6f454d0dd0
+
+Assistant ID:
+b24d75ef-23db-4f44-af9d-8e14a94d9c47
+
+
+SPEECH TO TEXT
+API Key:
+RNVi-1LSURyOigbaOx1Svh8GCPFmLUu-VCSkgg2Bx4fE
+
+Service Endpoint:
+https://api.us-south.speech-to-text.watson.cloud.ibm.com/instances/670fc00d-b786-4712-a036-324648e9a8cd
+
+TEXT TO SPEECH
+API Key:
+NAM8OH8BBqOpUpCAsiMsO_5-pFAGm0yeWOqyp3hLvRV0
+
+Service Endpoint:
+https://api.us-south.text-to-speech.watson.cloud.ibm.com/instances/414a88f1-8edf-4d0c-9710-7873b1723753

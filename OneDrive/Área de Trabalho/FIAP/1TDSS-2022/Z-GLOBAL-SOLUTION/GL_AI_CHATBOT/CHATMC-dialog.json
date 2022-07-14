@@ -1,0 +1,558 @@
+{
+  "intents": [
+    {
+      "intent": "cesta_basica",
+      "examples": [
+        {
+          "text": "A cesta básica desconta do meu salário?"
+        },
+        {
+          "text": "até quando posso receber a cesta básica?"
+        },
+        {
+          "text": "Até que dia posso receber a cesta básica?"
+        },
+        {
+          "text": "Cesta básicas"
+        },
+        {
+          "text": "Como funciona para solicitar as cestas básicas?"
+        },
+        {
+          "text": "Gostaria de informações sobre cestas básicas?"
+        },
+        {
+          "text": "Qual a data limite para receber a cesta básica?"
+        }
+      ],
+      "description": "Essa é uma intenção para detectar se a pessoa quer falar sobre cesta básicas."
+    },
+    {
+      "intent": "exame_periodico",
+      "examples": [
+        {
+          "text": "Até quando posso realizar meu exame periódico?"
+        },
+        {
+          "text": "exame periódico"
+        },
+        {
+          "text": "Gostaria de informações sobre exame periódico"
+        },
+        {
+          "text": "Quais são as idades para fazer o exame periódico?"
+        },
+        {
+          "text": "Qual a idade mínima para fazer o exame periódico"
+        },
+        {
+          "text": "Qual é a faixa de idade para o exame periódico?"
+        },
+        {
+          "text": "Quero saber sobre exame periódico?"
+        }
+      ],
+      "description": "Intenção para detectar pedidos de exames periodico"
+    },
+    {
+      "intent": "inclusão_beneficiario",
+      "examples": [
+        {
+          "text": "Como faço para fazer inclusão de beneficiário?"
+        },
+        {
+          "text": "Como faço para incluir meu filho como beneficiário?"
+        },
+        {
+          "text": "Gostaria de saber para fazer a inclusão dos meus filhos"
+        },
+        {
+          "text": "Inclusão de beneficiário"
+        },
+        {
+          "text": "Qual o passo a passo para incluir minha esposa como minha beneficiária"
+        },
+        {
+          "text": "Quero saber mais informações sobre beneficiários"
+        },
+        {
+          "text": "Tenho um filho como faço para colocar como beneficiário"
+        }
+      ],
+      "description": "Intenção para detectar a inclusão de beneficiario"
+    },
+    {
+      "intent": "plano_saude",
+      "examples": [
+        {
+          "text": "Como é o plano de saúde?"
+        },
+        {
+          "text": "Como faço para contratar os planos de saúde da melhores compras?"
+        },
+        {
+          "text": "Como faço para mudar o plano de saúde?"
+        },
+        {
+          "text": "Como faço para solicitar o plano de saúde?"
+        },
+        {
+          "text": "Como funciona a troca do plano de saúde?"
+        },
+        {
+          "text": "Olá, quero saber sobre os planos de saúde"
+        },
+        {
+          "text": "Quais são os planos de saúde que vocês possuem"
+        },
+        {
+          "text": "quais são os planos de saúde que vocês possuem?"
+        },
+        {
+          "text": "Queria saber mais sobre os planos de saúde?"
+        },
+        {
+          "text": "Quero saber mais sobre os planos de saúde"
+        }
+      ],
+      "description": "Essa é uma intenção para detectar se a pessoa quer sabe sobre o plano de saude"
+    }
+  ],
+  "entities": [
+    {
+      "entity": "parentesco",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "parantesco",
+          "synonyms": [
+            "conjuge",
+            "esposa",
+            "filha",
+            "filhas",
+            "filho",
+            "filhos",
+            "marido",
+            "mulher"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "RG",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "RG",
+          "patterns": [
+            "(^\\d{1,2}).?(\\d{3}).?(\\d{3})-?(\\d{1}|X|x$)",
+            "/(\\d{2})(\\d{3})(\\d{3})(\\d{1})"
+          ]
+        }
+      ],
+      "fuzzy_match": false
+    },
+    {
+      "entity": "sim-não",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "não",
+          "synonyms": [
+            "n",
+            "ñ",
+            "nao",
+            "não",
+            "no"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "sim",
+          "synonyms": [
+            "s",
+            "SI",
+            "sim",
+            "yes"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Bem-vindo (Welcome)",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Olá. Como posso te ajudar?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "Em outros casos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Eu não entendi. Você pode tentar reformular a frase."
+              },
+              {
+                "text": "Você pode reformular sua afirmação? Eu não estou entendendo."
+              },
+              {
+                "text": "Eu não entendi o sentido."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Em outros casos",
+      "previous_sibling": "node_1_1654727006180",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1654730197260",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1654730197281",
+      "previous_sibling": "handler_9_1654730197281"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Qual seu parentesco com essa pessoa"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_9_1654728493234",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1654728493242",
+      "previous_sibling": "handler_6_1654728493242"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1654728523579",
+      "context": {
+        "RG": "@RG.literal"
+      },
+      "conditions": "@RG",
+      "event_name": "input",
+      "dialog_node": "handler_2_1654728523581"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Qual o RG dessa pessoa? [DIGITE O RG]"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_4_1654728523579",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1654728523581",
+      "previous_sibling": "handler_2_1654728523581"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1654728493234",
+      "context": {
+        "parentesco": "@parentesco.literal"
+      },
+      "conditions": "@parentesco",
+      "event_name": "input",
+      "dialog_node": "handler_6_1654728493242"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_5_1654730197260",
+      "event_name": "input",
+      "dialog_node": "handler_9_1654730197281"
+    },
+    {
+      "type": "frame",
+      "title": "RG e Beneficiário",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Foi enviado uma solicitação para o RH para incluir um novo beneficiário no plano com o RG: $RG"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "$RG && $novo_beneficiario",
+      "dialog_node": "node_1_1654727006180",
+      "previous_sibling": "node_5_1654728398179"
+    },
+    {
+      "type": "standard",
+      "title": "Resposta 2",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Nesse caso não podemos adicionar essa pessoa ao seu plano de saúde."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1654728398179",
+      "conditions": "@sim-não:não",
+      "dialog_node": "node_1_1654728843413",
+      "previous_sibling": "node_6_1654728461199"
+    },
+    {
+      "type": "standard",
+      "title": "Nao-entendi",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Escreva com sim e não"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1654728461199",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1654728398179"
+      },
+      "conditions": "@sim-não != \"sim\" && @sim-não != \"não\"",
+      "dialog_node": "node_2_1654729562820",
+      "previous_sibling": "node_7_1654728626698"
+    },
+    {
+      "type": "standard",
+      "title": "Cesta básica",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "As cestas básicas da empresa não geram nenhum desconto na folha salarial da empresa e são entregues até o quinto dia útil de cada mês."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#cesta_basica",
+      "dialog_node": "node_3_1654726988914",
+      "previous_sibling": "node_8_1654726953700"
+    },
+    {
+      "type": "standard",
+      "title": "#exame_periodico",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "O exame periódico é feito dentro da própria empresa a cada dois anos para o funcionários maiores de 18 anos e menores do que 45 anos. Para as outras faixas etárias o exame é feito anualmente."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#exame_periodico",
+      "dialog_node": "node_5_1654726995719",
+      "previous_sibling": "node_3_1654726988914"
+    },
+    {
+      "type": "standard",
+      "title": "Inclusão de beneficiário.",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ok, para incluir um beneficiário ele deve ter um parentesco de filho(a) ou ser o seu conjugê. A pessoa que você deseja incluir se enquadra nesses dois cenários?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#inclusão_beneficiario",
+      "dialog_node": "node_5_1654728398179",
+      "previous_sibling": "node_5_1654726995719"
+    },
+    {
+      "type": "frame",
+      "title": "Resposta 1",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Deseja adicionar a pessoa com o RG: $RG que é seu(sua) $parentesco?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1654728398179",
+      "conditions": "@sim-não:sim",
+      "dialog_node": "node_6_1654728461199"
+    },
+    {
+      "type": "standard",
+      "title": "Resposta: NÃO",
+      "parent": "node_6_1654728461199",
+      "context": {
+        "RG": null,
+        "parentesco": null
+      },
+      "conditions": "@sim-não:não",
+      "dialog_node": "node_7_1654728626698",
+      "previous_sibling": "node_9_1654728754336"
+    },
+    {
+      "type": "standard",
+      "title": "Plano de saúde",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Os planos de saúde oferecidos pela empresa são da empresa Melhor Saúde, onde oferecemos o plano básico, intermediário e o plano plus, para a troca de plano de saúde é necessário entrar em contato com o RH e solicitar via uma carta manuscrita a troca de plano de sáude."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#plano_saude",
+      "dialog_node": "node_8_1654726953700",
+      "previous_sibling": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "Resposta: SIM",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Foi enviada uma solicitação para adicionar uma nova pessoa no seu plano de saúde. O RH irá lhe enviar um e-mail solicitando os documentos necessário para esse processo."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1654728461199",
+      "context": {
+        "novo_beneficiario": true
+      },
+      "conditions": "@sim-não:sim",
+      "dialog_node": "node_9_1654728754336"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_6_1654728461199",
+      "variable": "$RG",
+      "dialog_node": "slot_4_1654728523579",
+      "previous_sibling": "slot_9_1654728493234"
+    },
+    {
+      "type": "slot",
+      "parent": "node_1_1654727006180",
+      "dialog_node": "slot_5_1654730197260"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_6_1654728461199",
+      "variable": "$parentesco",
+      "dialog_node": "slot_9_1654728493234",
+      "previous_sibling": "node_2_1654729562820"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": "Você quis dizer:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "Nenhuma das anteriores"
+    },
+    "human_agent_assist": {
+      "prompt": "Você quis dizer:"
+    },
+    "intent_classification": {
+      "training_backend_version": "v2"
+    }
+  },
+  "learning_opt_out": false,
+  "name": "CHATMC",
+  "language": "pt-br",
+  "description": ""
+}

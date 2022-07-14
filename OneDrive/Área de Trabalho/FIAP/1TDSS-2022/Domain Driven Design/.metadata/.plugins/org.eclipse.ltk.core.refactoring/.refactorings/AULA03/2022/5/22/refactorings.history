@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename field &apos;doce&apos; in &apos;br.com.fiap.revisao.model.Venda&apos; to &apos;produto&apos;&#x0D;&#x0A;- Original project: &apos;AULA03&apos;&#x0D;&#x0A;- Original element: &apos;br.com.fiap.revisao.model.Venda.doce&apos;&#x0D;&#x0A;- Renamed element: &apos;br.com.fiap.revisao.model.Venda.produto&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="false" description="Rename field &apos;doce&apos;" flags="589826" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/src&lt;br.com.fiap.revisao.model{Venda.java[Venda^doce" name="produto" references="true" setter="false" stamp="1653701157999" textual="false" version="1.0"/>
+</session>

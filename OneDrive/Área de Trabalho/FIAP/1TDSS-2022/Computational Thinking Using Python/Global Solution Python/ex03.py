@@ -1,0 +1,17 @@
+def qntDigiCODEbar():
+    codeBar = str(input('Digite o código: ')).upper().strip()
+    while len(codeBar) != 15:
+        codeBar = str(input('Digite o código: ')).upper().strip()
+    codeBar.count('1')
+    codeBar.count('2')
+    codeBar.count('3')
+    codeBar.count('4')
+    codeBar.count('5')
+    codeBar.count('6')
+    codeBar.count('7')
+    codeBar.count('8')
+    codeBar.count('9')
+    codeBar.count('0')
+    totNum = codeBar.count('1') + codeBar.count('2') + codeBar.count('3') + codeBar.count('4') + codeBar.count('5') + codeBar.count('6') + codeBar.count('7') + codeBar.count('8') + codeBar.count('9') + codeBar.count('0')
+    print(f'Seu código tem {totNum}')
+qntDigiCODEbar()

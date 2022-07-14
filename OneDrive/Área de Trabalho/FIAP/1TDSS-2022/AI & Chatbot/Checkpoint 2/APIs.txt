@@ -1,0 +1,21 @@
+Watson Assistant:
+API Key
+WNAInwSeuG3POSBt1IC8eWS_r6jKHptS1LNBSx92vR9t
+URL
+https://api.us-south.assistant.watson.cloud.ibm.com/instances/9c7de441-f5be-4666-9f17-453ca8ff7f3a
+Assistant ID
+aceaed84-b905-40ea-8d34-aea485c96a45
+
+
+Text to Speech
+API Key
+NAM8OH8BBqOpUpCAsiMsO_5-pFAGm0yeWOqyp3hLvRV0
+URL
+https://api.us-south.text-to-speech.watson.cloud.ibm.com/instances/414a88f1-8edf-4d0c-9710-7873b1723753
+
+
+Speech to Text
+API Key
+RNVi-1LSURyOigbaOx1Svh8GCPFmLUu-VCSkgg2Bx4fE
+URL
+https://api.us-south.speech-to-text.watson.cloud.ibm.com/instances/670fc00d-b786-4712-a036-324648e9a8cd
