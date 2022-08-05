@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_STU_MEDICAMENTO_PM" directorySegmentName="seg_0" id="E71B8DAC-5B82-7B25-D969-CE67BC49AF03">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2022-04-30 12:26:04 UTC</createdTime>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<sourcePk>86790AE2-71A2-DA6B-F2CA-4CC2224F0442</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>6781FCAA-FEBC-F03D-1691-5BD3950D67F6</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D392555C-7206-A975-2B61-A8268A878BA6</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

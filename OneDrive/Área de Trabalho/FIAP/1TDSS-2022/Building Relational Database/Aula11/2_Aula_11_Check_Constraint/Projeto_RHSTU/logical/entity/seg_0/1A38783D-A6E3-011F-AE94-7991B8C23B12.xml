@@ -1,0 +1,148 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1A38783D-A6E3-011F-AE94-7991B8C23B12" name="T_RHSTU_CONTATO_PACIENTE">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2021-03-17 17:51:31 UTC</createdTime>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_PACIENTE" id="1C64CBCB-A234-0861-938D-0EB064629329">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2021-03-17 17:53:43 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber a chave primária do paciente. Esse número é sequencial e gerado automaticamente pelo sistema. Seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber a chave primária do paciente. Esse número é sequencial e gerado automaticamente pelo sistema. Seu conteúdo é obrigatório.]]></commentInRDBMS>
+<generatorID>DE1DF8BF-A74C-3932-5D5D-DC1555633DE6</generatorID>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<referedAttribute>15A097FF-A07C-398B-0F86-D42FFB66F5C7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_CONTATO" id="C60797BE-4119-9129-B14A-88739D575B56">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2021-03-17 17:51:31 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber a chave primária do contato do paciente. Esse número é sequencial e inicia sempre com 1 a partir do id do paciente e é gerado automaticamente pelo sistema. Seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber a chave primária do contato do paciente. Esse número é sequencial e inicia sempre com 1 a partir do id do paciente e é gerado automaticamente pelo sistema. Seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_TIPO_CONTATO" id="894D4DF0-1BF7-ADC3-9CEB-77AAC83B16AA">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2022-04-09 18:26:49 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber a chave primária do tipo do contato. Esse número é sequencial e gerado automaticamente pelo sistema. Seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber a chave primária do tipo do contato. Esse número é sequencial e gerado automaticamente pelo sistema. Seu conteúdo é obrigatório.]]></commentInRDBMS>
+<generatorID>20403068-9FFF-7A08-63D5-13C205008336</generatorID>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<referedAttribute>96F25215-6C52-EFA7-66EA-6F769446009E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_CONTATO" id="11C8FA5C-8E33-3243-4E99-FAED8A12A931">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2021-03-17 17:51:31 UTC</createdTime>
+<comment><![CDATA[Este atributo irá receber o nome do contato do paciente. Seu conteudo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Este atributo irá receber o nome do contato do paciente. Seu conteudo é obrigatório.]]></commentInRDBMS>
+<generatorID>8BCC4E83-DAA8-181A-7DE9-422F9A8742E1</generatorID>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_DDI" id="294FD7DF-01BD-9510-9064-BCAA0B2F2A80">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2022-04-09 18:45:05 UTC</createdTime>
+<comment><![CDATA[Este atributo irá receber o número do DDI do telefone do contato do paciente. Seu conteudo é opcional.]]></comment>
+<commentInRDBMS><![CDATA[Este atributo irá receber o número do DDI do telefone do contato do paciente. Seu conteudo é opcional.]]></commentInRDBMS>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_DDD" id="CA14A3CD-3477-1A67-B741-3DB8808D3250">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2021-03-17 17:51:31 UTC</createdTime>
+<comment><![CDATA[Este atributo irá receber o número do DDD  do telefone do contato do paciente. Seu conteudo é opcional.]]></comment>
+<commentInRDBMS><![CDATA[Este atributo irá receber o número do DDD  do telefone do contato do paciente. Seu conteudo é opcional.]]></commentInRDBMS>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_TELEFONE" id="4C257F99-8015-21C5-1A14-EA8F95A502F9">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2021-03-17 17:51:31 UTC</createdTime>
+<comment><![CDATA[Este atributo irá receber o número do telefone do contato do paciente. Seu conteudo é opcional.]]></comment>
+<commentInRDBMS><![CDATA[Este atributo irá receber o número do telefone do contato do paciente. Seu conteudo é opcional.]]></commentInRDBMS>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2AE6C75F-2810-8CEA-5FA4-7C1166C2AFA6" name="PK_RHSTU_CONTATO_EMERG_PAC">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2021-03-17 17:51:31 UTC</createdTime>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>C60797BE-4119-9129-B14A-88739D575B56,DE1DF8BF-A74C-3932-5D5D-DC1555633DE6</newElementsIDs>
+<usedAttributes>
+<attributeRef>C60797BE-4119-9129-B14A-88739D575B56</attributeRef>
+<attributeRef>1C64CBCB-A234-0861-938D-0EB064629329</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

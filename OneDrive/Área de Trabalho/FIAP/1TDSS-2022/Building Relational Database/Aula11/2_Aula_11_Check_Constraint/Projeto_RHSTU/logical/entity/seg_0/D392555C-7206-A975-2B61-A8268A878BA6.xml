@@ -1,0 +1,150 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D392555C-7206-A975-2B61-A8268A878BA6" name="T_RHSTU_PRESCICAO_MEDICA">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2022-04-30 12:26:04 UTC</createdTime>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_PRESCRICAO_MEDICA" id="06450B3D-258A-9A48-AE2A-5E0D6CA8C185">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2022-04-30 12:29:01 UTC</createdTime>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_UNID_HOSPITAL" id="2A69C009-B838-E04E-4FF5-3DBE5E4EBA04">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2022-04-30 12:30:42 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber a chave primária da Unidade Hospitalar. Esse número é sequencia e gerado automaticamente pelo sistema. Seu conteúdo é obrigatório.]]></comment>
+<generatorID>83E26DE5-CFC7-0393-6E33-ADB73D0FD6E6</generatorID>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<referedAttribute>B6C488CB-AE82-A793-0536-0FCACEBB3861</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_CONSULTA" id="88C91FA8-2D56-602D-977A-466442B3F658">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2022-04-30 12:30:42 UTC</createdTime>
+<generatorID>83E26DE5-CFC7-0393-6E33-ADB73D0FD6E6</generatorID>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<referedAttribute>4DC2BBD4-5844-F984-AA0B-B83576D7F211</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_MEDICAMENTO" id="51247351-12CE-622C-F252-6F6E4EDBC3FA">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2022-04-30 12:26:04 UTC</createdTime>
+<generatorID>E71B8DAC-5B82-7B25-D969-CE67BC49AF03</generatorID>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<importedID>954EE740-1383-87F7-0AC0-0404E7169B7F</importedID>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<referedAttribute>F738473F-7706-78AF-A7C4-AD5AD47E73FB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_POSOLOGIA" id="BEA532CF-A4B1-B5C3-B589-A6CC5BEDF284">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2022-04-30 12:26:04 UTC</createdTime>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<importedID>7E0EFC32-C5A2-A401-489A-F19AD890C4DC</importedID>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_VIA" id="CCA1487C-3E75-48FF-4219-E9538B0053A5">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2022-04-30 12:26:04 UTC</createdTime>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<importedID>DF722E70-6621-797C-EA66-D518D738C708</importedID>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_OBSERVACAO_USO" id="29516629-E8F4-0DF0-1A75-070FEAC6367F">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2022-04-30 12:26:04 UTC</createdTime>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<importedID>E91D9F32-5F8B-18D9-5278-441B5C97BFB1</importedID>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="QT_MEDICAMENTO" id="0B9BB64A-5932-18FA-DA89-C9EAC303F72A">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2022-04-30 12:26:04 UTC</createdTime>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<importedID>9CF0634E-51D3-535B-4596-A4E62EC2BEE0</importedID>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,10,4</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4A73F3F3-7F8F-C401-A3E6-E44EA223D576" name="PK_RHSTU_PRESCICAO_MEDICA">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2022-04-30 12:26:04 UTC</createdTime>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>06450B3D-258A-9A48-AE2A-5E0D6CA8C185</newElementsIDs>
+<usedAttributes>
+<attributeRef>06450B3D-258A-9A48-AE2A-5E0D6CA8C185</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

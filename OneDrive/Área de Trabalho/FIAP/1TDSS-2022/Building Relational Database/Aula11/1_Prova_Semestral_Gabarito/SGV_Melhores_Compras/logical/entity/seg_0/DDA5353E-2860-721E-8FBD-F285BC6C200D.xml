@@ -1,0 +1,151 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DDA5353E-2860-721E-8FBD-F285BC6C200D" name="T_MC_SGV_PRODUTO_VIDEO">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2022-05-30 16:01:46 UTC</createdTime>
+<generatorID>B2023A8F-0A1D-3820-7563-6F5C788B9A4B</generatorID>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>Tabela contendo informações sobre os vídeos dos produtos da Melhores Compras</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CD_PRODUTO" id="A16F659F-4DCF-8AAC-3E49-F5ADA66D60E4">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2022-05-30 16:08:56 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar a chave primária da tabela de produtos da Melhorees Compras. A cada produto cadastrado será acionada a Sequence  SQ_MC_PRODUTO que se encarregará de gerar o próximo número único do produto.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá armazenar a chave primária da tabela de produtos da Melhorees Compras. A cada produto cadastrado será acionada a Sequence  SQ_MC_PRODUTO que se encarregará de gerar o próximo número único do produto.]]></commentInRDBMS>
+<generatorID>921A3BE8-9C57-BD53-CC9F-548FD18F6398</generatorID>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<referedAttribute>06436B84-F61E-77A1-2DA4-4B200E58F674</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_SEQUENCIA" id="F8676370-8AFE-CA97-10DD-D625805893F0">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2022-05-30 16:01:46 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar a sequencia do vídeo a partir do codigo do produto. Sempre o primeiro vídeo de determinado  produto deve iniciar com o número 1. Seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá armazenar a sequencia do vídeo a partir do codigo do produto. Sempre o primeiro vídeo de determinado  produto deve iniciar com o número 1. Seu conteúdo é obrigatório.]]></commentInRDBMS>
+<generatorID>841F8E3A-5C2D-8E5E-D0D5-86B7F63BF8AE</generatorID>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CD_CATEGORIA" id="2679F6D8-6867-0160-52EB-CCB781FDD5A3">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2022-05-30 16:10:07 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar a chave primária da tabela de categoria de produtos da Melhorees Compras. Cada categoria nova cadastrada  será acionada a Sequence  SQ_MC_CATEGORIA que se encarregará de gerar o próximo número único da categoria..]]></comment>
+<generatorID>6F4C8991-2DFD-3F83-D99D-3544FAC4F54B</generatorID>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<referedAttribute>61280763-E025-81EA-F0E7-12ED26559547</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="VD_PRODUTO" id="3E0E8961-D80C-0AC7-4770-D4BCDFDA097A">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2022-05-30 16:01:46 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar oo vídeo do produto no formato que melhor lhe  convier.  Para utilizar essa coluna tenha acesso a documentação oficial da Oracle. Seu conteúdo é opcional.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá armazenar oo vídeo do produto no formato que melhor lhe  convier.  Para utilizar essa coluna tenha acesso a documentação oficial da Oracle. Seu conteúdo é opcional.]]></commentInRDBMS>
+<generatorID>7E9B5FE8-F95F-BBC5-5033-C404255A519D</generatorID>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TP_VIDEO_PROD" id="0BBACB99-063E-5F50-EAD8-782A9E48D482">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2022-05-30 16:01:46 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar o tipo do  vídeo do produto. Seu conteúdo é opcional.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá armazenar o tipo do  vídeo do produto. Seu conteúdo é opcional.]]></commentInRDBMS>
+<generatorID>68F27392-EC5D-014F-2F75-0F87D52C362C</generatorID>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_PATH_VIDEO_PROD" id="F535EDD2-1449-EDA0-E95D-F5E7797687E5">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2022-05-30 16:01:46 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar o caminho de acesso (link) contendo o  vídeo do produto. Seu conteúdo é opcional.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá armazenar o caminho de acesso (link) contendo o  vídeo do produto. Seu conteúdo é opcional.]]></commentInRDBMS>
+<generatorID>DD2A19E7-4C8A-406A-D42F-8A3E827266F8</generatorID>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ST_VIDEO_PROD" id="9BEBAC3C-B418-64D2-AD67-225B9FEA7533">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2022-05-30 16:01:46 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar o stauts do vídeo do produto da Melhorees Compras. Os valores permitidos aqui são: A(tivo) e I(nativo).]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá armazenar o stauts do vídeo do produto da Melhorees Compras. Os valores permitidos aqui são: A(tivo) e I(nativo).]]></commentInRDBMS>
+<generatorID>75704233-C2A1-B23A-1A14-A42BC76B368D</generatorID>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="52136D5B-5FD3-34D1-1C63-BCFBFDB5BFA4" name="T_MC_SGV_PRODUTO_VIDEO PK">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2022-05-30 16:01:46 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F8676370-8AFE-CA97-10DD-D625805893F0</attributeRef>
+<attributeRef>A16F659F-4DCF-8AAC-3E49-F5ADA66D60E4</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

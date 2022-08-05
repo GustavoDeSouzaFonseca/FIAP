@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6781FCAA-FEBC-F03D-1691-5BD3950D67F6" name="T_RHSTU_MEDICAMENTO">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2022-04-30 12:26:04 UTC</createdTime>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_MEDICAMENTO" id="F738473F-7706-78AF-A7C4-AD5AD47E73FB">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2022-04-30 12:26:04 UTC</createdTime>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<importedID>58075D3D-1ECA-9501-1F29-76D8D6ACA9DD</importedID>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_MEDICAMENTO" id="433269A9-4CC8-C3D9-1FAC-DDD3DAD444F4">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2022-04-30 12:26:04 UTC</createdTime>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<importedID>873BFA46-380E-D61D-4400-38FF7947D378</importedID>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_DETALHADA_MEDICAMENTO" id="E84CF79E-312F-B843-BD5B-546FC8537DAC">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2022-04-30 12:26:04 UTC</createdTime>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<importedID>8A9DA110-52EE-BA77-421B-7BD3359778EE</importedID>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_CODIGO_BARRAS" id="826230D4-6F0B-D152-05A8-6C8898414074">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2022-04-30 12:26:04 UTC</createdTime>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<importedID>709A346E-76FA-BCCC-181B-294B647B8701</importedID>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="86790AE2-71A2-DA6B-F2CA-4CC2224F0442" name="PK_RHSTU_MEDICAMENTO">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2022-04-30 12:26:04 UTC</createdTime>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>F738473F-7706-78AF-A7C4-AD5AD47E73FB</newElementsIDs>
+<usedAttributes>
+<attributeRef>F738473F-7706-78AF-A7C4-AD5AD47E73FB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_RHSTU_TIPO_CONTATO" directorySegmentName="seg_0" id="20403068-9FFF-7A08-63D5-13C205008336">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2022-04-09 18:26:49 UTC</createdTime>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<sourcePk>C3B8E62C-F474-3340-3A33-B0C00FEF136F</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>CDD54745-3930-D1D7-5257-BDB05A5DBC33</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>1A38783D-A6E3-011F-AE94-7991B8C23B12</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

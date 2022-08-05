@@ -1,0 +1,200 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="506DDC9A-FC9E-D13D-7FAD-ED571E3AEA46" name="T_RHSTU_PACIENTE">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2021-03-11 14:57:46 UTC</createdTime>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_PACIENTE" id="15A097FF-A07C-398B-0F86-D42FFB66F5C7">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2021-03-11 14:58:09 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber a chave primária do paciente. Esse número é sequencial e gerado automaticamente pelo sistema. Seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber a chave primária do paciente. Esse número é sequencial e gerado automaticamente pelo sistema. Seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_PACIENTE" id="E7B9BE27-8D29-04BC-E636-46B8778D8946">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2021-03-11 14:59:16 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber o nome completo do  paciente.  Seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber o nome completo do  paciente.  Seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80</dataTypeSize>
+<ownDataTypeParameters>80,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_CPF" id="07617EDF-1389-1681-00B9-B2B87A513598">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2022-04-12 03:46:20 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber o número do  CPF paciente.  Seu conteúdo é obrigatório e será validado de acordo com regras de negócio.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber o número do  CPF paciente.  Seu conteúdo é obrigatório e será validado de acordo com regras de negócio.]]></commentInRDBMS>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<ownDataTypeParameters>,12,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_RG" id="5FF1DCF8-0752-62E4-FC1A-C66FEA7746A3">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2022-04-12 03:47:28 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber o número do  RG  paciente.  Seu conteúdo é obrigatório e será validado de acordo com regras de negócio.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber o número do  RG  paciente.  Seu conteúdo é obrigatório e será validado de acordo com regras de negócio.]]></commentInRDBMS>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_NASCIMENTO" id="625095C3-64B3-2DCE-EAAF-A343DAD4394F">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2021-03-11 15:00:16 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber a data de nascimento do  paciente.  Seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber a data de nascimento do  paciente.  Seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FL_SEXO_BIOLÓGICO" id="51AA7BEA-2561-883C-3F87-A4C00E151D5C">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2021-03-17 17:49:27 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber a flag do sexo biológico de nascimento do Paciente. Os valores possíveis são (F)eminino ou (M)asculino ou (I)ndeinido. Seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber a flag do sexo biológico de nascimento do Paciente. Os valores possíveis são (F)eminino ou (M)asculino ou (I)ndeinido. Seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_ESCOLARIDADE" id="5A76BFC7-CE43-5891-06E9-22F6EFAF2AC2">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2021-03-17 17:50:05 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber a Escolaridade do  paciente.  Seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber a Escolaridade do  paciente.  Seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_ESTADO_CIVIL" id="26542855-8ED5-214E-F3E8-4C04DD59697B">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2021-03-17 17:50:30 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber o Estado Civil  do  paciente.  Seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber o Estado Civil  do  paciente.  Seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_GRUPO_SANGUINEO" id="558E4362-07FD-E811-5A60-FEF4903B8866">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2022-04-09 18:22:29 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber o grupo sanguineo do  paciente.  Seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber o grupo sanguineo do  paciente.  Seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>6,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_ALTURA" id="FF7EEA05-B081-6DEA-1669-0D521C6B60F8">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2022-04-09 18:22:48 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber a altura do  paciente.  Seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber a altura do  paciente.  Seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,3,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_PESO" id="DBF23AAB-D826-B0E5-2D82-B48D51E90BDF">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2022-04-09 18:23:05 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber o peso  do  paciente.  Seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esse atributo irá receber o peso  do  paciente.  Seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,4,1</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6E644410-7AD5-C7FC-2576-8D927C238CC0" name="PK_RHSTU_PACIENTE">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2021-03-11 14:59:08 UTC</createdTime>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>15A097FF-A07C-398B-0F86-D42FFB66F5C7</newElementsIDs>
+<usedAttributes>
+<attributeRef>15A097FF-A07C-398B-0F86-D42FFB66F5C7</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

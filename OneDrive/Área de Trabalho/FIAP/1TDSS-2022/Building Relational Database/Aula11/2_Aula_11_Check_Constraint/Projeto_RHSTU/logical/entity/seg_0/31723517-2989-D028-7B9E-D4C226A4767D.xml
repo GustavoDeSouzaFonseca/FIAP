@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="31723517-2989-D028-7B9E-D4C226A4767D" name="T_RHSTU_CONSULTA">
+<createdBy>logonpflocal</createdBy>
+<createdTime>2022-04-29 12:55:52 UTC</createdTime>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_UNID_HOSPITAL" id="B6C488CB-AE82-A793-0536-0FCACEBB3861">
+<createdBy>logonpflocal</createdBy>
+<createdTime>2022-04-29 13:12:40 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber a chave primária da Unidade Hospitalar. Esse número é sequencia e gerado automaticamente pelo sistema. Seu conteúdo é obrigatório.]]></comment>
+<generatorID>A13A1EBB-693F-9AEF-C9E5-3E59D154F9D3</generatorID>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<referedAttribute>C3796F42-602F-5AE2-4BB7-9B2AE3D1F6B4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_CONSULTA" id="4DC2BBD4-5844-F984-AA0B-B83576D7F211">
+<createdBy>logonpflocal</createdBy>
+<createdTime>2022-04-29 12:55:52 UTC</createdTime>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<importedID>90BFBD1E-F0EA-9FAE-CC69-0DE8BEAD8917</importedID>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_PACIENTE" id="AE16BCCF-B954-6824-F7DB-300D2318D9B2">
+<createdBy>logonpflocal</createdBy>
+<createdTime>2022-04-29 12:58:39 UTC</createdTime>
+<comment><![CDATA[Esse atributo irá receber a chave primária do paciente. Esse número é sequencial e gerado automaticamente pelo sistema. Seu conteúdo é obrigatório.]]></comment>
+<generatorID>911D582F-E5D9-B53A-08A1-2336487045C2</generatorID>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<referedAttribute>15A097FF-A07C-398B-0F86-D42FFB66F5C7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CD_MEDICO" id="4ADC3A8B-EDCB-8300-F9D5-2595EE930581">
+<createdBy>logonpflocal</createdBy>
+<createdTime>2022-04-29 12:58:54 UTC</createdTime>
+<generatorID>D2E39926-C7CB-40C3-CCFE-0A79C9A7B3BB</generatorID>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<referedAttribute>1B9CB403-E629-65E7-585F-DA2527A66279</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_HR_CONSULTA" id="E984FC82-E115-71C8-5FDA-85BB1A35804F">
+<createdBy>logonpflocal</createdBy>
+<createdTime>2022-04-29 12:55:52 UTC</createdTime>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<importedID>C8F34890-9578-86BE-EC4B-AC098D9014B1</importedID>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_CONSULTORIO" id="27D923EF-8051-DAC9-6DAC-2BE39E00AAB0">
+<createdBy>logonpflocal</createdBy>
+<createdTime>2022-04-29 12:55:52 UTC</createdTime>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<importedID>82D8EF1C-5CC4-0A80-0925-E8ED55101543</importedID>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="94012AC5-2823-C905-42C8-C02D1BAAFCE4" name="PK_RHSTU_CONSULTA">
+<createdBy>logonpflocal</createdBy>
+<createdTime>2022-04-29 12:55:52 UTC</createdTime>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<engineerTo>
+<item key="BD52EFD7-AD57-1D29-FBCE-37428351E3D1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>4DC2BBD4-5844-F984-AA0B-B83576D7F211,A13A1EBB-693F-9AEF-C9E5-3E59D154F9D3</newElementsIDs>
+<usedAttributes>
+<attributeRef>4DC2BBD4-5844-F984-AA0B-B83576D7F211</attributeRef>
+<attributeRef>B6C488CB-AE82-A793-0536-0FCACEBB3861</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

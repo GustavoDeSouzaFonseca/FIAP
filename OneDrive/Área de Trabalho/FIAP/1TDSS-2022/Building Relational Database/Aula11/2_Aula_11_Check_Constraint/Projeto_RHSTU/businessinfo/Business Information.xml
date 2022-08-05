@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BusinessInfoDesign class="oracle.dbtools.crest.model.businessinfo.BusinessInfoDesign" name="Business Information" id="6E571AE6-430C-6726-D7E6-A70CBF1885E9">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2021-03-11 14:57:06 UTC</createdTime>
+<ownerDesignName>Projeto_RHSTU</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</BusinessInfoDesign>

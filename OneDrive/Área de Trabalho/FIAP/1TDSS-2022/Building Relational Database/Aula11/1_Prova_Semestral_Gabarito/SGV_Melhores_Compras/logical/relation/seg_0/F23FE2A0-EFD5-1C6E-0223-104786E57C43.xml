@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_MC_CIDADE_ESTADO" directorySegmentName="seg_0" id="F23FE2A0-EFD5-1C6E-0223-104786E57C43">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2022-05-30 16:26:26 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<sourcePk>711F3C0C-AD43-483F-5A2A-1FE7AE840F49</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>CC9BE77E-D71A-F1AA-B795-A6B633BE6E36</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>6B4436E5-8DF0-4E89-5BE8-2E46C1505045</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,163 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2CAB69F6-DFAC-FA35-71BA-B2561927EADF" name="T_MC_SGV_VISUALIZACAO_VIDEO">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2022-05-30 16:01:46 UTC</createdTime>
+<generatorID>28F64B05-779D-029A-71EE-F134DD6C5D92</generatorID>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CD_VISUALIZACAO_VIDEO" id="9765FD4F-030D-514E-F422-02C05FB96F52">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2022-05-30 16:01:46 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar a chave primária da tabela de visualização do vídeo, onde a cada click que o usuario logado ou anônimo realizar, será anotado o acesso realizado.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá armazenar a chave primária da tabela de visualização do vídeo, onde a cada click que o usuario logado ou anônimo realizar, será anotado o acesso realizado.]]></commentInRDBMS>
+<generatorID>34AC82C6-64AA-D355-81FE-5F624BE0DA86</generatorID>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CD_PRODUTO" id="458F4676-5E21-99A9-C8CA-15EF3BDF6E8E">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2022-05-30 18:01:27 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar a chave primária da tabela de produtos da Melhorees Compras. A cada produto cadastrado será acionada a Sequence  SQ_MC_PRODUTO que se encarregará de gerar o próximo número único do produto.]]></comment>
+<generatorID>797A1F82-E791-38D6-2D98-CB18522B21F1</generatorID>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<referedAttribute>A16F659F-4DCF-8AAC-3E49-F5ADA66D60E4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_SEQUENCIA" id="CA4F2710-84CD-FE08-519E-DBEB1C44EC91">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2022-05-30 18:01:27 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar a sequencia do vídeo a partir do codigo do produto. Sempre o primeiro vídeo de determinado  produto deve iniciar com o número 1. Seu conteúdo é obrigatório.]]></comment>
+<generatorID>797A1F82-E791-38D6-2D98-CB18522B21F1</generatorID>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<referedAttribute>F8676370-8AFE-CA97-10DD-D625805893F0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_CLIENTE" id="1C882E92-217B-C126-CB47-1CFD14DA4AFC">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2022-05-30 18:02:16 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar o código único do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório, único e preenhcido a  parrtir da chamada de sequence  SQ_MC_CLIENTE, a qual terá sempre o número disponivel para uso.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá armazenar o código único do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório, único e preenhcido a  parrtir da chamada de sequence  SQ_MC_CLIENTE, a qual terá sempre o número disponivel para uso.]]></commentInRDBMS>
+<generatorID>A610BC73-417D-C3C9-2620-1CB9F8532BCC</generatorID>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>DEBA694E-0FA9-19F3-8713-27E279D95451</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_VISUALIZACAO" id="61F310B9-137B-C028-F58B-1993BA4FBCDD">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2022-05-30 16:01:46 UTC</createdTime>
+<comment><![CDATA[Essa  coluna  irá  receber a data da visualização feita pelo  usuário no formato dd/mm/yyyy. Essa coluna é obrigatória.]]></comment>
+<commentInRDBMS><![CDATA[Essa  coluna  irá  receber a data da visualização feita pelo  usuário no formato dd/mm/yyyy. Essa coluna é obrigatória.]]></commentInRDBMS>
+<generatorID>DFEE5AD1-AFA4-EB87-9AEF-6E7EC20392FF</generatorID>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_HORA_VISUALIZACAO" id="4CE6042F-EB66-6B79-038B-A3624774884F">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2022-05-30 16:01:46 UTC</createdTime>
+<comment><![CDATA[Essa  coluna  irá  receber o horário no formato HH24 da visualização feita pelo  usuário. Essa coluna é obrigatória.]]></comment>
+<commentInRDBMS><![CDATA[Essa  coluna  irá  receber o horário no formato HH24 da visualização feita pelo  usuário. Essa coluna é obrigatória.]]></commentInRDBMS>
+<generatorID>A1E786CF-130D-AF84-BC29-1581DC11FB21</generatorID>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_MINUTO_VIDEO" id="153F9618-F714-C4F9-47BB-F81CD9D6C23E">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2022-05-30 16:01:46 UTC</createdTime>
+<comment><![CDATA[Essa  coluna  irá  receber o horário do minuto do vídeo quando foi feita a visualização pelo  usuário. Essa coluna é obrigatória e os valores possíveis estão entre 00 e 59, representando os minutos.]]></comment>
+<commentInRDBMS><![CDATA[Essa  coluna  irá  receber o horário do minuto do vídeo quando foi feita a visualização pelo  usuário. Essa coluna é obrigatória e os valores possíveis estão entre 00 e 59, representando os minutos.]]></commentInRDBMS>
+<generatorID>EF40BFAE-2B5A-961F-2EBE-B90DA4BD56FA</generatorID>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_SEGUNDO_VIDEO" id="E6EF83C0-E146-9C36-C06A-0396201D84F5">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2022-05-30 16:01:46 UTC</createdTime>
+<comment><![CDATA[Essa  coluna  irá  receber o horário dos segundos do vídeo quando foi feita a visualização pelo  usuário. Essa coluna é obrigatória e os valores possíveis estão entre 00 e 59, representando os minutos.]]></comment>
+<commentInRDBMS><![CDATA[Essa  coluna  irá  receber o horário dos segundos do vídeo quando foi feita a visualização pelo  usuário. Essa coluna é obrigatória e os valores possíveis estão entre 00 e 59, representando os minutos.]]></commentInRDBMS>
+<generatorID>51FFBB3B-8531-8A69-F606-4F1DD4336ADB</generatorID>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2E00655D-61B6-581C-97D1-51885DBA58F9" name="T_MC_SGV_VISUALIZACAO_VIDEO PK">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2022-05-30 18:01:21 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9765FD4F-030D-514E-F422-02C05FB96F52</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
