@@ -12,7 +12,7 @@ public class Produto {
 		this.preco = preco;
 		this.desconto = desconto;
 	}
-	
+
 	//GETTERS AND SETTERS
 	public int getQuantidade() {
 		return quantidade;
@@ -36,7 +36,7 @@ public class Produto {
 	//OVERRIDE
 	@Override
 	public String toString() {
-		return "Produto: quantidade=" + quantidade + ", preco = R$" + preco + ", desconto=" + desconto "%";
+		return "Produto: quantidade=" + quantidade + ", preco = R$" + preco + ", desconto=" + desconto + "%";
 	}
 
 	

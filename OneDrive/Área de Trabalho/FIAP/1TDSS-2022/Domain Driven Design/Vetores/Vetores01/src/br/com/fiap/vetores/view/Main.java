@@ -18,7 +18,7 @@ public class Main {
 		int qnt[] = new int[nProd];
 		int i = 0;
 		while (i<nProd) {
-			int quantidade =  Integer.parseInt(JOptionPane.showInputDialog("Digite a quantidade do " + (i+1) +"° Produto: "));
+			int quantidade =  Integer.parseInt(JOptionPane.showInputDialog("Digite o estoque do " + (i+1) +"° Produto: "));
 			double preco = Double.parseDouble(JOptionPane.showInputDialog("Digite o preço do " + (i+1) + "° Produto: "));
 			double desconto = Double.parseDouble(JOptionPane.showInputDialog("Digite o desconto do " + (i+1) + "° Produto: "));
 			
@@ -27,9 +27,10 @@ public class Main {
 			i ++;	
 		}
 		
-		
-		System.out.println(produto);
-
+		while (i < nProd) {
+			System.out.println(produto.toString());
+			i ++;
+		}
 			
 			
 			
